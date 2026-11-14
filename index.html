@@ -202,7 +202,7 @@ dialog::backdrop{background:rgba(6,6,6,.94)}
 #brush{position:fixed;left:0;top:0;width:36px;height:48px;pointer-events:none;z-index:71;display:none;transform-origin:18px 46px;will-change:transform}
 #brush svg{display:block;width:36px;height:48px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.35))}
 @media (pointer:fine){body.paint #paint,body.paint #brush{display:block}body.paint,body.paint *{cursor:none!important}}
-.paint-toggle{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:75;display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:var(--ink);color:var(--paper);border:1.5px solid var(--ink);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;transition:background .3s,color .3s,border-color .3s}
+.paint-toggle{position:fixed;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:75;display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:var(--ink);color:var(--paper);border:1.5px solid var(--ink);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;transition:background .3s,color .3s,border-color .3s}
 .paint-toggle::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--grey)}
 .paint-toggle:hover{border-color:var(--orange)}
 .paint-toggle[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:var(--ink)}
